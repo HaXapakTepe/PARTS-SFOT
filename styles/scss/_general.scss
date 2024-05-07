@@ -83,3 +83,10 @@ body {
 	font-weight: 700;
 	color: #000;
 }
+
+@media(max-width: 768px) {
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
