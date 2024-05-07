@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	const body = document.querySelector('body')
 	const burger = document.querySelector('.burger')
 	const menu = document.querySelector('.menu')
+	const searchClue = document.querySelector('.search__clue')
+	const searchInput = document.querySelector('.search__input')
 
 	const toggleMenu = () => {
 		menu.classList.toggle('menu--active')
@@ -19,6 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	burger.addEventListener('click', toggleMenu)
 	document.addEventListener('click', clickOutsideMenu)
+
+	searchClue?.addEventListener('click', () => {
+		searchInput.value = searchClue.textContent
+		searchClue.textContent = ''
+	})
 
 	const slidersSwipers = []
 	const sliderSwiper = document.querySelectorAll('.slider__swiper')

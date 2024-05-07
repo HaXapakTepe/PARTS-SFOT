@@ -52,6 +52,23 @@
 		}
 	}
 
+	&__clue {
+		position: absolute;
+		right: 65px;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 15px;
+		color: #999;
+		font-style: italic;
+		text-decoration: underline;
+		transition: color .23s ease-in-out;
+		cursor: pointer;
+
+		&:hover {
+			color: #333;
+		}
+	}
+
 	&__btn {
 		position: absolute;
 		top: 0;
