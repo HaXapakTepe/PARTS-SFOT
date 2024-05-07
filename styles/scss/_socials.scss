@@ -1,0 +1,11 @@
+.socials {
+  display: flex;
+  @include fluid(gap, 21px, 34px);
+
+  &__icon {
+    @include fluid(width, 35px, 50px);
+    @include fluid(height, 35px, 50px);
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}

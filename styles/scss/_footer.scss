@@ -1,0 +1,35 @@
+.footer {
+  @include fluid(padding-top, 88px, 110px);
+  @include fluid(padding-bottom, 15px, 20px);
+  background-color: #193439;
+
+  &__box {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 20px, 42px);
+    @include fluid(margin-bottom, 215px, 184px);
+    @include fluid(margin-left, 0px, 51px);
+  }
+
+  &__copy {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media(max-width: 1023px) {
+  .footer {
+    padding-top: 197px;
+
+    &__box {
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      margin-bottom: 35px;
+    }
+  }
+}

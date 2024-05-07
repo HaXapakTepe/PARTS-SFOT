@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./assets/images/favicon.svg" type="x-icon" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./styles/css/normalize.css" />
+	<link rel="stylesheet" href="./styles/css/style.css?v=0.0001" />
+	<title>PARTS-SORT</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header__top">
+				<div class="container">
+					<div class="header__top-box">
+						<div class="header__loca">
+							<img class="header__loca-icon" src="./assets/images/icons/loca.svg" alt="">
+							<p class="header__loca-text">
+								г. Королев
+							</p>
+						</div>
+						<nav class="menu">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<p class="menu__link">
+										О нас
+										<img class="menu__link-icon" src="./assets/images/icons/arrow-bot.svg" alt="">
+									</p>
+									<ul class="dropdown">
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">
+												Доставка и оплата
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">
+												О компании
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">
+												Оплата
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">
+												Гарантия
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">
+												Возврат
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<p class="menu__link">
+										Клиентам
+										<img class="menu__link-icon" src="./assets/images/icons/arrow-bot.svg" alt="">
+									</p>
+									<ul class="dropdown">
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">
+												Доставка и оплата
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">
+												О компании
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">
+												Оплата
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">
+												Гарантия
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">
+												Возврат
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">
+										Vin запрос
+									</a>
+								</li>
+								<li class="menu__item menu__item--hidden">
+									<a class="header__phone" href="tel:+74951289560">
+										+7 (495) 128-95-60
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<a class="header__phone" href="tel:+74951289560">
+							+7 (495) 128-95-60
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__inner">
+				<div class="container">
+					<div class="header__inner-box">
+						<div class="burger">
+							<div class="burger__line"></div>
+						</div>
+						<a class="logo" href="#">
+							<img class="logo__img" src="./assets/images/logo.svg" alt="" />
+						</a>
+						<form class="search" action="">
+							<label class="search__label">
+								<input class="search__input" type="search" placeholder="Поиск" />
+								<button class="search__btn">
+									<img class="search__btn-icon" src="./assets/images/icons/search.svg" alt="">
+								</button>
+							</label>
+						</form>
+						<div class="icons">
+							<a class="icons__link" href="#">
+								<span class="icons__link-num">0</span>
+								<i class="icons__icon">
+									<svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_2301_683)">
+											<path
+												d="M21 40.5C32.0457 40.5 41 31.5457 41 20.5C41 9.4543 32.0457 0.5 21 0.5C9.9543 0.5 1 9.4543 1 20.5C1 31.5457 9.9543 40.5 21 40.5Z"
+												fill="#EA7B30" />
+											<path d="M12 18.5H30M12 18.5L14 28.5H28L30 18.5M12 18.5L18 12.5M30 18.5L24 12.5" stroke="white"
+												stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</g>
+									</svg>
+								</i>
+							</a>
+							<a class="icons__link" href="#">
+								<i class="icons__link-icon">
+									<svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect y="0.5" width="21" height="21" rx="10.5" fill="white" />
+										<path
+											d="M9.5 7H7.5C6.94772 7 6.5 7.44772 6.5 8V14C6.5 14.5523 6.94772 15 7.5 15H9.5M9 11H15M9 11L11 13M9 11L11 9"
+											stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</i>
+								<i class="icons__icon">
+									<svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_2301_690)">
+											<path
+												d="M21 40.5C32.0457 40.5 41 31.5457 41 20.5C41 9.4543 32.0457 0.5 21 0.5C9.9543 0.5 1 9.4543 1 20.5C1 31.5457 9.9543 40.5 21 40.5Z"
+												fill="#EA7B30" />
+											<path
+												d="M29 29.5V27.5C29 25.2909 27.2091 23.5 25 23.5H17C14.7909 23.5 13 25.2909 13 27.5V29.5M25 15.5C25 17.7091 23.2091 19.5 21 19.5C18.7909 19.5 17 17.7091 17 15.5C17 13.2909 18.7909 11.5 21 11.5C23.2091 11.5 25 13.2909 25 15.5Z"
+												stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</g>
+									</svg>
+								</i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+
+			<section class="slider">
+				<div class="slider__wrapper">
+					<div class="container">
+						<div class="slider__inner">
+							<h2 class="slider__title title">
+								Спецпредложения
+							</h2>
+							<div class="slider__swiper slider__swiper--1 swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="slider__slide">
+											<img class="slider__slide-img" data- src="./assets/images/slider/1.png" alt="">
+											<p class="slider__slide-title">
+												Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+											</p>
+											<div class="slider__slide-box">
+												<p class="slider__slide-text">
+													<span>Номер:</span> Тут номер
+												</p>
+												<p class="slider__slide-text">
+													<span>Бренд:</span> Название бренда
+												</p>
+											</div>
+											<div class="slider__slide-bot">
+												<p class="slider__slide-price">10 000 р.</p>
+												<button class="btn">Купить</button>
+											</div>
+											</di>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slider__slide">
+											<img class="slider__slide-img" data- src="./assets/images/slider/1.png" alt="">
+											<p class="slider__slide-title">
+												Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+											</p>
+											<div class="slider__slide-box">
+												<p class="slider__slide-text">
+													<span>Номер:</span> Тут номер
+												</p>
+												<p class="slider__slide-text">
+													<span>Бренд:</span> Название бренда
+												</p>
+											</div>
+											<div class="slider__slide-bot">
+												<p class="slider__slide-price">10 000 р.</p>
+												<button class="btn">Купить</button>
+											</div>
+											</di>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slider__slide">
+											<img class="slider__slide-img" data- src="./assets/images/slider/1.png" alt="">
+											<p class="slider__slide-title">
+												Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+											</p>
+											<div class="slider__slide-box">
+												<p class="slider__slide-text">
+													<span>Номер:</span> Тут номер
+												</p>
+												<p class="slider__slide-text">
+													<span>Бренд:</span> Название бренда
+												</p>
+											</div>
+											<div class="slider__slide-bot">
+												<p class="slider__slide-price">10 000 р.</p>
+												<button class="btn">Купить</button>
+											</div>
+											</di>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slider__slide">
+											<img class="slider__slide-img" data- src="./assets/images/slider/1.png" alt="">
+											<p class="slider__slide-title">
+												Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+											</p>
+											<div class="slider__slide-box">
+												<p class="slider__slide-text">
+													<span>Номер:</span> Тут номер
+												</p>
+												<p class="slider__slide-text">
+													<span>Бренд:</span> Название бренда
+												</p>
+											</div>
+											<div class="slider__slide-bot">
+												<p class="slider__slide-price">10 000 р.</p>
+												<button class="btn">Купить</button>
+											</div>
+											</di>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slider__slide">
+											<img class="slider__slide-img" data- src="./assets/images/slider/1.png" alt="">
+											<p class="slider__slide-title">
+												Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+											</p>
+											<div class="slider__slide-box">
+												<p class="slider__slide-text">
+													<span>Номер:</span> Тут номер
+												</p>
+												<p class="slider__slide-text">
+													<span>Бренд:</span> Название бренда
+												</p>
+											</div>
+											<div class="slider__slide-bot">
+												<p class="slider__slide-price">10 000 р.</p>
+												<button class="btn">Купить</button>
+											</div>
+											</di>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slider__slide">
+											<img class="slider__slide-img" data- src="./assets/images/slider/1.png" alt="">
+											<p class="slider__slide-title">
+												Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+											</p>
+											<div class="slider__slide-box">
+												<p class="slider__slide-text">
+													<span>Номер:</span> Тут номер
+												</p>
+												<p class="slider__slide-text">
+													<span>Бренд:</span> Название бренда
+												</p>
+											</div>
+											<div class="slider__slide-bot">
+												<p class="slider__slide-price">10 000 р.</p>
+												<button class="btn">Купить</button>
+											</div>
+											</di>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slider__slide">
+											<img class="slider__slide-img" data- src="./assets/images/slider/1.png" alt="">
+											<p class="slider__slide-title">
+												Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+											</p>
+											<div class="slider__slide-box">
+												<p class="slider__slide-text">
+													<span>Номер:</span> Тут номер
+												</p>
+												<p class="slider__slide-text">
+													<span>Бренд:</span> Название бренда
+												</p>
+											</div>
+											<div class="slider__slide-bot">
+												<p class="slider__slide-price">10 000 р.</p>
+												<button class="btn">Купить</button>
+											</div>
+											</di>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slider__slide">
+											<img class="slider__slide-img" data- src="./assets/images/slider/1.png" alt="">
+											<p class="slider__slide-title">
+												Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+											</p>
+											<div class="slider__slide-box">
+												<p class="slider__slide-text">
+													<span>Номер:</span> Тут номер
+												</p>
+												<p class="slider__slide-text">
+													<span>Бренд:</span> Название бренда
+												</p>
+											</div>
+											<div class="slider__slide-bot">
+												<p class="slider__slide-price">10 000 р.</p>
+												<button class="btn">Купить</button>
+											</div>
+											</di>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slider__slide">
+											<img class="slider__slide-img" data- src="./assets/images/slider/1.png" alt="">
+											<p class="slider__slide-title">
+												Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+											</p>
+											<div class="slider__slide-box">
+												<p class="slider__slide-text">
+													<span>Номер:</span> Тут номер
+												</p>
+												<p class="slider__slide-text">
+													<span>Бренд:</span> Название бренда
+												</p>
+											</div>
+											<div class="slider__slide-bot">
+												<p class="slider__slide-price">10 000 р.</p>
+												<button class="btn">Купить</button>
+											</div>
+											</di>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slider__slide">
+											<img class="slider__slide-img" data- src="./assets/images/slider/1.png" alt="">
+											<p class="slider__slide-title">
+												Шланг радиатора OPEL VECTRA C 1.8 COMFORT 81 кВт
+											</p>
+											<div class="slider__slide-box">
+												<p class="slider__slide-text">
+													<span>Номер:</span> Тут номер
+												</p>
+												<p class="slider__slide-text">
+													<span>Бренд:</span> Название бренда
+												</p>
+											</div>
+											<div class="slider__slide-bot">
+												<p class="slider__slide-price">10 000 р.</p>
+												<button class="btn">Купить</button>
+											</div>
+											</di>
+										</div>
+									</div>
+								</div>
+								<div class="slider__arrow arrow">
+									<div class="slider__arrow-prev slider__arrow-prev--1 arrow__prev swiper-button-prev"></div>
+									<div class="slider__arrow-next slider__arrow-next--1 arrow__next swiper-button-next"></div>
+								</div>
+							</div>
+							<div class="slider__info">
+								<h2 class="slider__info-title title">О компании</h2>
+								<p class="slider__info-text">
+									ООО "СпецАвтоПром" - компания, занимающаяся розничной продажей запчастей, расходных материалов,
+									аксессуаров и комплектующих для автомобилей иностранного производства. В нашем ассортименте продукция
+									ведущих европейских, корейских, японских марок, а так же большой выбор неоригинальных автомобильных
+									запчастей.
+								</p>
+								<p class="slider__info-text">
+									Мы предлагаем быстрый и удобный сервис по поиску, подбору и заказу необходимых вам запчастей, сезонную
+									систему скидок и максимально короткие сроки доставки.
+								</p>
+							</div>
+						</div>
+					</div>
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__box">
+					<a class="logo" href="#">
+						<img class="logo__img" src="./assets/images/logo.svg" alt="" />
+					</a>
+					<div class="socials">
+						<a class="socials__link" href="#">
+							<img class="socials__link-icon" src="./assets/images/icons/fb.svg" alt="">
+						</a>
+						<a class="socials__link" href="#">
+							<img class="socials__link-icon" src="./assets/images/icons/inst.svg" alt="">
+						</a>
+						<a class="socials__link" href="#">
+							<img class="socials__link-icon" src="./assets/images/icons/yt.svg" alt="">
+						</a>
+					</div>
+				</div>
+				<p class="footer__copy">
+					© Название компании Все права защищены
+				</p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="./scripts/scripts.js"></script>
+</body>
+
+</html>
